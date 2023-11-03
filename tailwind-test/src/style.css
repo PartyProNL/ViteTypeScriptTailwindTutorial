@@ -4,24 +4,20 @@
 
 @keyframes text-scroll {
     from {
-        @apply bg-gradient-to-r;
-        --tw-gradient-from: #4ade80 var(--tw-gradient-from-position);
-        --tw-gradient-to: #fde047 var(--tw-gradient-to-position);
-        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-        background-image: linear-gradient(to right, )
+        background-position: right;
     }
 
     to {
-        @apply bg-gradient-to-r;
-        --tw-gradient-from: #fca5a5 var(--tw-gradient-from-position);
-        --tw-gradient-to: #f87171 var(--tw-gradient-to-position);
-        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+        background-position: left;
     }
 }
 
 #text-scroll {
-    @apply transition-all;
+    background-image: linear-gradient(to right, #4ade80, #a5f3fc, #c4b5fd);
+    background-repeat: repeat-y;
+    background-size: 200% 90px;
+    background-position: 0;
     animation: text-scroll linear forwards;
     animation-timeline: scroll(root block);
-    animation-range: 0vh 100px;
+    animation-range: 0vh 200px;
 }
