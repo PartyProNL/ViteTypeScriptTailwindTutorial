@@ -61,4 +61,4 @@ Voeg de volgende inhoud toe aan het CSS bestand dat bij je HTML hoort:
 @tailwind utilities;
 ```
 
-Installeer vervolgens de `Tailwind CSS IntelliSense` plugin op Visual Studio Code.
+Installeer vervolgens de `Tailwind CSS IntelliSense` plugin op Visual Studio Code, en daarna de `PostCSS Language Support` plugin.

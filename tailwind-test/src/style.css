@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes text-scroll {
+    from {
+        @apply bg-gradient-to-r;
+        --tw-gradient-from: #4ade80 var(--tw-gradient-from-position);
+        --tw-gradient-to: #fde047 var(--tw-gradient-to-position);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+        background-image: linear-gradient(to right, )
+    }
+
+    to {
+        @apply bg-gradient-to-r;
+        --tw-gradient-from: #fca5a5 var(--tw-gradient-from-position);
+        --tw-gradient-to: #f87171 var(--tw-gradient-to-position);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    }
+}
+
+#text-scroll {
+    @apply transition-all;
+    animation: text-scroll linear forwards;
+    animation-timeline: scroll(root block);
+    animation-range: 0vh 100px;
+}
