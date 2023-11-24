@@ -44,6 +44,7 @@ Maak een bestand aan met de naam `tailwind.config.js` in de root-folder en plaat
 export default {
   content: [
     "./index.html",
+    "./**/*.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
